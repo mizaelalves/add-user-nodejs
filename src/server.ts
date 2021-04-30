@@ -57,7 +57,5 @@ app.delete("/users/:id", (req, res) => {
 
   return res.status(204).send();
 });
+app.listen(process.env.PORT || 5000)
 
-app.listen("4000", () => {
-  console.log("Backend Started!");
-});
